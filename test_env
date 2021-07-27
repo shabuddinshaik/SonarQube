@@ -1,1 +1,1 @@
-echo ${{ secrets.APP }}
+echo ${{ secrets.ENVIRONMENT_VARIABLE_NAME }}
