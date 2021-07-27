@@ -1,1 +1,1 @@
-echo ${{ NAME }}
+echo {{ NAME }}
