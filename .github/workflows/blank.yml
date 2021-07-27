@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: sh test_env
+        run: echo -e $ENVIRONMENT_VARIABLE_NAME
         env:
           ENVIRONMENT_VARIABLE_NAME: ${{secrets.APP}}
 
