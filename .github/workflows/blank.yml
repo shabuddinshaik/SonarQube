@@ -28,9 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: bash test_env
+        env:
+         ENVIRONMENT_VARIABLE_NAME: ${{ secrets.NAME }}
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo {{ NAME }},
-          echo test, and deploy your project.
+      
