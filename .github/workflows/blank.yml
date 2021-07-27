@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: bash test_env
+        run: sh test_env
         env:
-         ENVIRONMENT_VARIABLE_NAME: ${{ secrets.NAME }}
+         ENVIRONMENT_VARIABLE_NAME: ${{secrets.NAME}}
 
       
