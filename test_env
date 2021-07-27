@@ -1,1 +1,1 @@
-echo ${{ secrets.NAME }}
+echo ${{ secrets.APP }}
