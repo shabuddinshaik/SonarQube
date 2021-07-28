@@ -1,1 +1,0 @@
-echo ${{ ENVIRONMENT_VARIABLE_NAME }}
