@@ -5,6 +5,32 @@
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-artifact</artifactId>
     <version>1.0.0</version>
+    <profile>
+  <id>coverage</id>
+  <build>
+   <plugins>
+    <plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.5</version>
+    <executions>
+      <execution>
+        <id>prepare-agent</id>
+        <goals>
+         <goal>prepare-agent</goal>
+        </goals>
+      </execution>
+      <execution>
+        <id>report</id>
+        <goals>
+         <goal>report</goal>
+        </goals>
+      </execution>
+    </executions>
+    </plugin>
+   </plugins>
+  </build>
+</profile>
     <properties>
        <sonar.projectKey>md4abrar_SonarQube</sonar.projectKey>
        <sonar.organization>md4abrar</sonar.organization>
