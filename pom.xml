@@ -29,12 +29,4 @@
    </plugins>
   </build>
 
-    <properties>
-       <sonar.projectKey>md4abrar_SonarQube</sonar.projectKey>
-       <sonar.organization>md4abrar</sonar.organization>
-       <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-       <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-
 </project>
